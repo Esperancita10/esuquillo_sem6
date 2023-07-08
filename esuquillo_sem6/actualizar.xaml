@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="esuquillo_sem6.actualizar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="FORMULARIO ACTUALIZAR/ELIMINAR " HorizontalTextAlignment="Center"  FontSize="22" />
+            <Entry x:Name="txtCodigo" IsEnabled="False"/>
+            <Entry x:Name="txtNombre" />
+            <Entry x:Name="txtApelldio" />
+            <Entry x:Name="txtEdad" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnActualId" Text="Actualizar" Clicked="btnActualId_Clicked"   Grid.Row="0" Grid.Column="0"/>
+                <Button x:Name="btnBorrarId" Text="Borrar"  Clicked="btnBorrarId_Clicked" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
